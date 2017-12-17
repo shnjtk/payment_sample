@@ -64,6 +64,8 @@ group :development, :test do
   gem 'pry-doc'
   # Use factory_bot_rails
   gem 'factory_bot_rails'
+  # Use faker
+  gem 'faker'
 end
 
 group :development do
