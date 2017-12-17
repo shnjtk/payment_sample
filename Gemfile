@@ -76,6 +76,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use foreman
   gem 'foreman'
+  # Use rails_layout
+  gem 'rails_layout'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
