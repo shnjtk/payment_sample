@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'babel-transpiler'
 # Use simple_form to make form
 gem 'simple_form'
+# Use sprockets (tentative. should remove in the future)
+gem 'sprockets', github: 'rails/sprockets'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
