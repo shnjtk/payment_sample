@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'slim-rails', github: 'slim-template/slim-rails'
 # Use Bootstrap
 gem 'bootstrap-sass'
+# Bootstrap depends on jQuery
+gem 'jquery-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
