@@ -42,6 +42,8 @@ gem 'babel-transpiler'
 
 # Use devise to manage user account
 gem 'devise'
+# Use pundit for authorization
+gem 'pundit'
 
 # Use awesome_print to color and indent Ruby objects
 gem 'awesome_print'
