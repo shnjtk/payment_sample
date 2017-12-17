@@ -10,12 +10,13 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter:  mysql2
   encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  pool:     <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['PAYMENT_SAMPLE_DATABASE_USERNAME'] %>
+  password: <%= ENV['PAYMENT_SAMPLE_DATABASE_PASSWORD'] %>
+  host:     <%= ENV['PAYMENT_SAMPLE_DATABASE_HOST'] %>
+  port:     <%= ENV['PAYMENT_SAMPLE_DATABASE_PORT'] %>
 
 development:
   <<: *default
@@ -50,5 +51,3 @@ test:
 production:
   <<: *default
   database: payment_sample_production
-  username: payment_sample
-  password: <%= ENV['PAYMENT_SAMPLE_DATABASE_PASSWORD'] %>
