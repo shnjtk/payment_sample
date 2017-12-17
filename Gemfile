@@ -63,6 +63,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-doc'
   gem 'pry-rescue'
+  # Use rspec-rails
+  gem 'rspec-rails'
   # Use factory_bot_rails
   gem 'factory_bot_rails'
   # Use faker
