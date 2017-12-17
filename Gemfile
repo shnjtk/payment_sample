@@ -45,6 +45,9 @@ gem 'devise'
 # Use pundit for authorization
 gem 'pundit'
 
+# Use money/currency utility
+gem 'money-rails'
+
 # Use awesome_print to color and indent Ruby objects
 gem 'awesome_print'
 
